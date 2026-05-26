@@ -1,0 +1,11 @@
+# Normalize line endings on Windows checkouts
+* text=auto
+
+# Julia sources
+*.jl text diff=julia
+
+# Binary assets
+*.png binary
+*.gif binary
+*.jpg binary
+*.jpeg binary

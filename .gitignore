@@ -1,0 +1,41 @@
+# Julia
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+Manifest.toml.bak
+
+# PackageCompiler / builds
+/build/
+/deps/build.log
+/deps/downloads/
+/deps/usr/
+/deps/src/
+
+# Documentation
+docs/build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors & IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Regenerated scenario outputs (keep committed demo assets via .gitignore exceptions)
+data/scenario_*/
+!data/floor_plan_small.png
+!data/scenario_3_inaccurate_prior_reward_present/
+!data/scenario_3_inaccurate_prior_reward_present/**

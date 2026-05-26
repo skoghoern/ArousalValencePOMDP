@@ -1,0 +1,6 @@
+key,value
+scenario_name,"Scenario 3: Inaccurate Prior, Reward Present"
+episode_length,23
+time_horizon,80
+planning_horizon,6
+n_iterations,20
