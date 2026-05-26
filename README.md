@@ -70,12 +70,10 @@ Scenario 4 models uncertainty about absence; scenario 5 models a confident but w
 ### Setup
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ArousalValencePOMDP.git
+git clone https://github.com/skoghoern/ArousalValencePOMDP.git
 cd ArousalValencePOMDP
 julia --project=. -e 'using Pkg; Pkg.instantiate()'
 ```
-
-Replace `YOUR_USERNAME` with your GitHub username or organization.
 
 Main dependencies: `RxInfer`, `Distributions`, `Plots`, `LogExpFunctions`, `Tullio`.
 
@@ -139,8 +137,6 @@ The original exploratory notebook is kept as `Arousal_Valence_POMDP.ipynb`.
 ├── bin/
 │   └── run_scenarios.jl          # CLI entry point
 ├── data/                         # Floor plan + sample outputs; full runs regenerate under data/
-├── test/
-│   └── runtests.jl               # Smoke tests (Pkg.test())
 ├── src/
 │   ├── ArousalValencePOMDP.jl    # Module, exports, scenario registry
 │   ├── environment.jl            # 13-room graph, actions, observations
@@ -148,12 +144,6 @@ The original exploratory notebook is kept as `Arousal_Valence_POMDP.ipynb`.
 │   ├── simulation.jl             # Episode loop, valence/arousal metrics
 │   └── visualization.jl          # Circumplex, beliefs, floorplan animation
 └── README.md
-```
-
-## Tests
-
-```bash
-julia --project=. -e 'using Pkg; Pkg.test()'
 ```
 
 ## License
